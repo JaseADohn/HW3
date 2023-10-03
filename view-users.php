@@ -6,6 +6,7 @@
       <th>ID</th>
       <th>Name</th>
       <th>Password</th>
+      <th></th>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +17,7 @@ while ($user = $users->fetch_assoc()) {
     <td><?php echo $user['user_id']; ?></td>
     <td><?php echo $user['user_name']; ?></td>
     <td><?php echo $user['user_password']; ?></td>
+    <td><a href ="products-by-user.php?id=<?php echo $user['user_id']; ?>">Products</a></td>
   </tr>
   <?php
 }
