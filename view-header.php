@@ -26,7 +26,7 @@
           <a class="nav-link" href="products.php">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="products-category.php">Products with category</a>
+          <a class="nav-link" href="users-products.php">Users with Products</a>
         </li>
       </ul>
     </div>
