@@ -16,7 +16,7 @@ while ($product = $products->fetch_assoc()) {
     <td><?php echo $product['product_name']; ?></td>
     <td><?php echo $product['category_id']; ?></td>
     <td>
-      <form method="post" action="categorys-by-products.php">
+      <form method="post" action="categorys-by-product.php">
   <input type="hidden" name="pid" value="<?php echo $product['category_id']; ?>">
   <button type="category" class="btn btn-primary">Category</button>
       </form>
