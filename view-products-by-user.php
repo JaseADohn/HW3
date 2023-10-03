@@ -18,8 +18,8 @@ while ($product = $products->fetch_assoc()) {
     <td><?php echo $product['product_id']; ?></td>
     <td><?php echo $product['product_name']; ?></td>
     <td><?php echo $product['category_id']; ?></td>
-    <td><?php echo $product['order_amount']; ?></td>
-    <td><?php echo $product['orders_status']; ?></td>
+    <td><?php echo $product['orders_amount']; ?></td>
+    <td><?php echo $product['order_status']; ?></td>
   </tr>
   <?php
 }
