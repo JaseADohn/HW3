@@ -5,7 +5,7 @@ $pageTitle = "Users";
 include "view-header.php";
 
 $users = selectUsers();
-include "view-instructors.php";
+include "view-users.php";
 
 include "view-footer.php";
 ?>
