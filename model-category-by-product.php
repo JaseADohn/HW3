@@ -1,4 +1,5 @@
-<?php
+
+<!-- <?php
 function selectCategoryByProduct($pid) {
     try {
         $conn = get_db_connection();
@@ -13,4 +14,5 @@ function selectCategoryByProduct($pid) {
         throw $e;
     }
 }
-?>
+?> -->
+
