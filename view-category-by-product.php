@@ -12,14 +12,14 @@
     </thead>
     <tbody>
 <?php
-while ($category = $categorys->fetch_assoc()) {
+while ($product = $products->fetch_assoc()) {
   ?>
   <tr>
-    <td><?php echo $category['product_id']; ?></td>
-    <td><?php echo $category['product_name']; ?></td>
-    <td><?php echo $category['category_name']; ?></td>
-    <td><?php echo $category['orders_amount']; ?></td>
-    <td><?php echo $category['order_status']; ?></td>
+    <td><?php echo $product['product_id']; ?></td>
+    <td><?php echo $product['product_name']; ?></td>
+    <td><?php echo $product['category_name']; ?></td>
+    <td><?php echo $product['orders_amount']; ?></td>
+    <td><?php echo $product['order_status']; ?></td>
   </tr>
   <?php
 }
