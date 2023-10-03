@@ -9,7 +9,7 @@
     </thead>
     <tbody>
 <?php
-while ($user = $users->fetch_assoc()) {
+while ($product = $products->fetch_assoc()) {
   ?>
   <tr>
     <td><?php echo $user['product_name']; ?></td>
