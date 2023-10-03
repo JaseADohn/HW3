@@ -1,4 +1,4 @@
-<h1>Products by user</h1>
+<h1>Category by product</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
