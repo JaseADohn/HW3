@@ -12,8 +12,8 @@
 while ($product = $products->fetch_assoc()) {
   ?>
   <tr>
-    <td><?php echo $user['product_name']; ?></td>
-    <td><?php echo $user['category_id']; ?></td>
+    <td><?php echo $product['product_name']; ?></td>
+    <td><?php echo $product['category_id']; ?></td>
   </tr>
   <?php
 }
