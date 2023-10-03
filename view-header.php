@@ -23,7 +23,7 @@
           <a class="nav-link" href="users.php">Users</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Products.php">Products</a>
+          <a class="nav-link" href="products.php">Products</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="products-category.php">Products with category</a>
