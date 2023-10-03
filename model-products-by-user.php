@@ -1,9 +1,9 @@
 <?php
-function selectProductsByUser($uid) {
+function selectProductsByUser($oid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT p.product_id, product_name, category_id, orders_amount, order_status FROM `product` p join orders o on o.product_id = p.product_id where o.user_id=?");
-        $stmt->bind_param("i", $uid);
+        $stmt->bind_param("i", $oid);
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
