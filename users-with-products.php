@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("users-with-products.php");
+require_once("model-users-with-products.php");
 $pageTitle = "Users";
 include "view-header.php";
 
