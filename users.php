@@ -8,8 +8,12 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
       case "Add":
-      insertUser($_POST['uName'], $_POST['uPassword']);
-      break;
+      if (insertUser($_POST['uName'], $_POST['uPassword']);) {
+          echo '<div class="alert alert-success" role="alert"> User added </div>';
+        } else {
+          echo '<div class="alert alert-danger" role="alert"> error </div>';
+            }
+        break;
     }
 }
 
