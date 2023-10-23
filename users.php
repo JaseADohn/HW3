@@ -10,9 +10,7 @@ if (isset($_POST['actionType'])) {
       case "Add":
       if (insertUser($_POST['uName'], $_POST['uPassword'])) {
           echo '<div class="alert alert-success" role="alert"> User added </div>';
-        } else {
-          echo '<div class="alert alert-danger" role="alert"> error </div>';
-            }
+        } 
         break;
     }
 }
