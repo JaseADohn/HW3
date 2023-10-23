@@ -25,6 +25,7 @@
               <label for="uPassword" class="form-label">User Password</label>
               <input type="text" class="form-control" id="uPassword" name="uPassword">
             </div>
+                <input type="hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Save</button>
         </form>
       </div>
