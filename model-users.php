@@ -20,7 +20,7 @@ function insertUser($uName, $uPassword) {
         $stmt->bind_param("ss", $uName, $uPassword);
         $success = $stmt->execute();
         $conn->close();
-        return $result;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
