@@ -4,6 +4,15 @@ require_once("model-users.php");
 
 $pageTitle = "Users";
 include "view-header.php";
+
+if (isset($_POST['actionType'])) {
+    switch ($_POST['actionType']) {
+      case "Add":
+      insertUser($_POST['uName'], $_POST['uPassword']);
+      break;
+    }
+}
+
 $users = selectUsers();
 include "view-users.php";
 include "view-footer.php";
