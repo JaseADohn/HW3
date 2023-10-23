@@ -3,7 +3,7 @@
     <h1>Users</h1>
   </div>
   <div class="col-auto">
-    <?php>
+    <?php
       include "view-users-newform.php";
     ?>
   </div>
