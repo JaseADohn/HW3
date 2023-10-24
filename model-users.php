@@ -44,7 +44,7 @@ function updateUser($uName, $uPassword, $uid) {
 function deleteUser($uid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("delete from user where user_id=?");
+        $stmt = $conn->prepare("DELETE FROM user WHERE `user`.`user_id` = ?");
         $stmt->bind_param("i", $uid);
         $success = $stmt->execute();
         $conn->close();
