@@ -30,6 +30,11 @@ while ($user = $users->fetch_assoc()) {
     <td><?php echo $user['user_password']; ?></td>
     <td><a href ="products-by-user.php?id=<?php echo $user['user_id']; ?>">Products</a></td>
     <td>
+    <?php
+      include "view-user-editform.php";
+    ?>
+    </td>
+    <td>
       <form method="post" action="">
   <input type="hidden" name="uid" value="<?php echo $user['user_id']; ?>">
   <input type = "hidden" name = "actionType" value = "Delete">
@@ -40,9 +45,6 @@ while ($user = $users->fetch_assoc()) {
         </svg>
   </button>
       </form>
-    </td>
-    <td>
-      
     </td>
   </tr>
   <?php
