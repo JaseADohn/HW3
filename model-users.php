@@ -34,7 +34,7 @@ function updateUser($uName, $uPassword, $uid) {
         $stmt->bind_param("ssi", $uName, $uPassword, $uid);
         $success = $stmt->execute();
         $conn->close();
-        return $result;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
@@ -48,7 +48,7 @@ function deleteUser($uid) {
         $stmt->bind_param("i", $uid);
         $success = $stmt->execute();
         $conn->close();
-        return $result;
+        return $success;
     } catch (Exception $e) {
         $conn->close();
         throw $e;
