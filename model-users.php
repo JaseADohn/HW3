@@ -31,7 +31,7 @@ function updateUser($uName, $uPassword, $uid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `user` set (`user_name` = ?, `user_password` = ?) where 'user_id' = ?");
-        $stmt->bind_param("ssi", $uName, $uPassword, $uid);
+        $stmt->bind_param("ss", $uName, $uPassword, $uid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
