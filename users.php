@@ -12,6 +12,11 @@ if (isset($_POST['actionType'])) {
           echo '<div class="alert alert-success" role="alert"> User added </div>';
         } 
         break;
+        case "Edit":
+      if (updateUser($_POST['uName'], $_POST['uPassword'], $_POST['uid'])) {
+          echo '<div class="alert alert-success" role="alert"> User Edited </div>';
+        } 
+        break;
     case "Delete":
       if (deleteUser($_POST['uid'])) {
           echo '<div class="alert alert-success" role="alert"> Course deleted </div>';
