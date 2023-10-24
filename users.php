@@ -7,12 +7,12 @@ include "view-header.php";
 
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
-      case "Add":
+    case "Add":
       if (insertUser($_POST['uName'], $_POST['uPassword'])) {
           echo '<div class="alert alert-success" role="alert"> User added </div>';
         } 
         break;
-        case "Delete":
+    case "Delete":
       if (deleteUser($_POST['uid'])) {
           echo '<div class="alert alert-success" role="alert"> Course deleted </div>';
         } 
