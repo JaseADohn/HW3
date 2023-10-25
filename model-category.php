@@ -31,7 +31,7 @@ function updateCategory($cName, $Cid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `category` SET `category_name` = ? WHERE `category_id` = ?");
-        $stmt->bind_param("ssi", $cName, $Cid);
+        $stmt->bind_param("si", $cName, $Cid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
