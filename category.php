@@ -25,7 +25,7 @@ if (isset($_POST['actionType'])) {
     }
 }
 
-$users = selectUsers();
+$category = selectCategory();
 include "view-users.php";
 include "view-footer.php";
 ?>
