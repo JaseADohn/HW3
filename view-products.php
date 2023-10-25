@@ -26,7 +26,7 @@ while ($product = $products->fetch_assoc()) {
     <td><?php echo $product['category_id']; ?></td>
     <td>
     <?php
-      include "view-user-editform.php";
+      include "view-product-editform.php";
     ?>
     </td>
     <td>
