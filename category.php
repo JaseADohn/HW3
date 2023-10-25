@@ -25,7 +25,7 @@ if (isset($_POST['actionType'])) {
     }
 }
 
-$category = selectCategory();
+$categorys = selectCategory();
 include "view-category.php";
 include "view-footer.php";
 ?>
