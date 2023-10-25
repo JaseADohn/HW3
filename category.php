@@ -8,17 +8,17 @@ include "view-header.php";
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
     case "Add":
-      if (insertUser($_POST['cName'])) {
+      if (insertCategory($_POST['cName'])) {
           echo '<div class="alert alert-success" role="alert"> Category added </div>';
         } 
         break;
         case "Edit":
-      if (updateUser($_POST['cName'], $_POST['Cid'])) {
+      if (updateCategory($_POST['cName'], $_POST['Cid'])) {
           echo '<div class="alert alert-success" role="alert"> Category Edited </div>';
         } 
         break;
     case "Delete":
-      if (deleteUser($_POST['Cid'])) {
+      if (deleteCategory($_POST['Cid'])) {
           echo '<div class="alert alert-success" role="alert"> Category deleted </div>';
         } 
         break;
