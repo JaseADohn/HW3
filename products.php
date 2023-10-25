@@ -12,7 +12,7 @@ if (isset($_POST['actionType'])) {
         } 
         break;
         case "Edit":
-      if (updateProduct($_POST['pName'], $_POST['cid'], $_POST['pid'])) {
+      if (updateProduct($_POST['pName'], $_POST['pid'])) {
           echo '<div class="alert alert-success" role="alert"> Product Edited </div>';
         } 
         break;
