@@ -27,7 +27,7 @@ function insertProduct($pName, $cid) {
     }
 }
 
-function updateProduct($pName, $cid) {
+function updateProduct($pName) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `product` SET `product_name` = ?);
