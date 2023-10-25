@@ -1,4 +1,13 @@
-<h1>Products</h1>
+<div class ="row">
+  <div class="col">
+    <h1>Products</h1>
+  </div>
+  <div class="col-auto">
+    <?php
+      include "view-product-newform.php";
+    ?>
+  </div>
+</div>
 <div class="table-responsive">
   <table class="table">
     <thead>
