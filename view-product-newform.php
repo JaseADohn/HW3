@@ -23,7 +23,11 @@
             </div>
               <div class="mb-3">
               <label for="cid" class="form-label">Category ID</label>
-              <input type="text" class="form-control" id="cid" name="cid">
+<?php
+$categoryList = selectCategoriesForInput();
+include "view-category-input-list.php";
+
+?>
             </div>
                 <input type="hidden" name="actionType" value="Add">
             <button type="submit" class="btn btn-primary">Save</button>
