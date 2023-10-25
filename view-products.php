@@ -12,6 +12,7 @@
   <table class="table">
     <thead>
       <tr>
+      <th>Product ID</th>
       <th>Name</th>
       <th>Category ID</th>
       <th></th>
@@ -22,6 +23,7 @@
 while ($product = $products->fetch_assoc()) {
   ?>
   <tr>
+    <td><?php echo $product['product_id']; ?></td>
     <td><?php echo $product['product_name']; ?></td>
     <td><?php echo $product['category_id']; ?></td>
     <td>
