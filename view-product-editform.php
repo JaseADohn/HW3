@@ -19,7 +19,7 @@
         <form method="post" action="">
             <div class="mb-3">
               <label for="pName <?php echo $product['product_id']; ?>" class="form-label">Product Name</label>
-              <input type="text" class="form-control" id="pName<?php echo $product['product_id']; ?>" name="pName" value="<?php echo $product['product_id']; ?>">
+              <input type="text" class="form-control" id="pName<?php echo $product['product_id']; ?>" name="pName" value="<?php echo $product['product_name']; ?>">
             </div>
               <div class="mb-3">
               <label for="cid<?php echo $category['category_id']; ?>" class="form-label">Category ID</label>
