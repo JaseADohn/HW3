@@ -24,8 +24,8 @@
 while ($category = $categorys->fetch_assoc()) {
   ?>
   <tr>
-    <td><?php echo $user['category_id']; ?></td>
-    <td><?php echo $user['category_name']; ?></td>
+    <td><?php echo $category['category_id']; ?></td>
+    <td><?php echo $category['category_name']; ?></td>
     <td>
     <?php
       include "view-category-editform.php";
