@@ -19,7 +19,7 @@
         <form method="post" action="">
             <div class="mb-3">
               <label for="pName <?php echo $product['product_id']; ?>" class="form-label">Product Name</label>
-              <input type="text" class="form-control" id="pName<?php echo $product['product_id']; ?>" name="uName" value="<?php echo $user['user_name']; ?>">
+              <input type="text" class="form-control" id="pName<?php echo $product['product_id']; ?>" name="pName" value="<?php echo $product['product_name']; ?>">
             </div>
                 <input type="hidden" name="pid" value="<?php echo $product['product_id']; ?>">
                 <input type="hidden" name="actionType" value="Edit">
