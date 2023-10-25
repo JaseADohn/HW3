@@ -16,7 +16,7 @@ function selectProducts() {
 function selectCategoriesForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT category_id FROM `product` ");
+        $stmt = $conn->prepare("SELECT category_id, category_name FROM `category` ");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
