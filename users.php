@@ -19,7 +19,7 @@ if (isset($_POST['actionType'])) {
         break;
     case "Delete":
       if (deleteUser($_POST['uid'])) {
-          echo '<div class="alert alert-success" role="alert"> Course deleted </div>';
+          echo '<div class="alert alert-success" role="alert"> User deleted </div>';
         } 
         break;
     }
