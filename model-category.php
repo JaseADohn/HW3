@@ -16,7 +16,7 @@ function selectCategory() {
 function insertCategory($cName) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `category` (`category_name`) VALUES (?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `category` (`category_name`) VALUES (?)");
         $stmt->bind_param("s", $cName);
         $success = $stmt->execute();
         $conn->close();
