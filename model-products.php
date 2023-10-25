@@ -41,11 +41,11 @@ function insertProduct($pName, $cid) {
     }
 }
 
-function updateProduct($pName) {
+function updateProduct($pName, $pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `product` SET `product_name` = ?");
-        $stmt->bind_param("s", $pName);
+        $stmt = $conn->prepare("UPDATE `product` SET `product_name` = ? WHERE `product_id` = ?");
+        $stmt->bind_param("si", $pName, $pid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
